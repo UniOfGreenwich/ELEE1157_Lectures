@@ -70,7 +70,7 @@ Module Name: Network Routing Management
 
 Credits: 15
 
-Module Leader: Seb Blair BEng(H) PGCAP MIET MIHEEM FHEA
+Module Leader: Seb Blair BEng(H) MPhil PGCAP MIET MIHEEM FHEA
 </code></pre>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-class="gaia" data-paginate="true" data-style="#img-right{
@@ -271,6 +271,8 @@ gap {
 <th>Class</th>
 <th>Range</th>
 <th>Usage</th>
+<th>Networks</th>
+<th>Hosts</th>
 </tr>
 </thead>
 <tbody>
@@ -278,26 +280,36 @@ gap {
 <td>A</td>
 <td>1.0.0.0 - 126.0.0.0</td>
 <td>Large networks</td>
+<td>16777216</td>
+<td>16777214</td>
 </tr>
 <tr>
 <td>B</td>
 <td>128.0.0.0 - 191.255.0.0</td>
 <td>Medium networks</td>
+<td>65534</td>
+<td>65534</td>
 </tr>
 <tr>
 <td>C</td>
 <td>192.0.0.0 - 223.255.255.0</td>
 <td>Small networks</td>
+<td>2097152</td>
+<td>254</td>
 </tr>
 <tr>
 <td>D</td>
 <td>224.0.0.0 - 239.255.255.255</td>
 <td>Multicasting</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td>E</td>
 <td>240.0.0.0 - 255.255.255.255</td>
 <td>Experimental</td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
