@@ -34,7 +34,7 @@ style: |
       gap: var(--gap, 4px);
     }    content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
     }
-footer: ELEE1157 | Network Rotuing Management
+footer: ELEE1157 | Network Routing Management
 auto-scaling: false
 paginate: true
 _paginate: false
