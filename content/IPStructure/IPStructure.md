@@ -178,8 +178,243 @@ IPv4 has reserved addresses for private networks and special purposes.
 
 ---
 
+
+
+## Why IPv6?
+
+**IPv4 Address Exhaustion**
+
+- IPv4: 32-bit address space (~4.3 billion addresses).
+
+- Increasing number of internet-connected devices.
+
+- IPv6: 128-bit address space
+
+- ~340 undecillion addresses (enough for future needs).
+
+**Enhanced features:**
+
+- Auto-configuration.
+
+- Improved security (IPSec).
+
+- Simplified header format.
+
+---
+
+## IPv6 Address Format
+
+<div align=center>
+
+![center](../../figures/ipv6-address-format.png)
+
+</div>
+
+<div style="font-size:22px">
+
+- Length: 128 bits (8 groups of 16 bits each).
+
+- Hexadecimal notation.
+
+- Groups separated by colons (e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334).
+
+**Simplification Rules:**
+
+- Remove leading zeros (e.g., 0010 -> 10).
+
+- Replace consecutive zero groups with :: (only once per address).
+
+</div>
+
+---
+
+## Anatomy of IPv6 address format: Example
+
+<div align=center>
+
+![w:1000](../../figures/IPv6-Anatomy-Address-Format.png)
+
+</div>
+
+---
+
+<div align=center>
+
+![bg 100% horizontal](../../figures/iana_map.png)
+
+![bg 100% horizontal](../../figures/ipv6-prefix-assignment.png)
+
+</div>
+
+<!--
+
+Internet Assigned Numbers Authority
+
+
+-->
+---
+
+## IPv4 to IPv6 Transition
+
+<div style="font-size:22px">
+
+- **Dual Stack**
+
+  - Devices run both IPv4 and IPv6 simultaneously.
+
+  - Allows gradual transition.
+
+<div align=center>
+
+![center](../../figures/ipv6_DualStack.png)
+
+</div>
+
+---
+
+<div style="font-size="24px">
+
+- **Tunneling**
+
+  - Encapsulates IPv6 packets within IPv4 headers.
+
+  - **Examples:**
+
+    - 6to4: Automatically assigns an IPv6 prefix to IPv4.
+
+    - Teredo: Tunnels IPv6 over IPv4 using NAT.
+
+<div align=center>
+
+![](../../figures/ipv6_tunnelling.png)
+
+</div>
+
+---
+
+<div style="font-size="24px">
+
+- **Translation**
+
+  - **NAT64:**
+
+    - Maps IPv6 addresses to IPv4 and vice versa.
+
+    - Enables IPv6-only devices to communicate with IPv4 devices.
+
+</div>
+
+<div align=center>
+
+![bg right:50% 100% ](../../figures/ipv6_nat64.png)
+
+
+</div>
+
+---
+
+##  IPv4 to IPv6
+
+### Step 1: Understand the IPv4 Address
+- Example IPv4: `192.168.0.1`
+- Convert to binary:
+  - 192 -> `11000000`
+  - 168 -> `10101000`
+  - 0 -> `00000000`
+  - 1 -> `00000001`
+- Binary IPv4: `11000000.10101000.00000000.00000001`
+
+
+---
+
+
+### Step 2: Map IPv4 to IPv6 Format
+- IPv6 has special prefixes for IPv4-mapped addresses:
+  - `::ffff:0:0/96`
+- Append the 32-bit binary IPv4 to the `::ffff:` prefix.
+
+---
+
+### Step 3: Convert Binary IPv4 to Hexadecimal
+
+<div style="font-size:23px">
+
+- IPv4 in binary: `11000000.10101000.00000000.00000001`
+- Group into 4-bit chunks:
+  - `1100 0000 1010 1000 0000 0000 0000 0001`
+- Convert each chunk to hexadecimal:
+  - `1100` -> `C`
+  - `0000` -> `0`
+  - `1010` -> `A`
+  - `1000` -> `8`
+  - `0000` -> `0`
+  - `0000` -> `0`
+  - `0000` -> `0`
+  - `0001` -> `1`
+- Hexadecimal IPv4: `C0:A8:00:01`
+
+</div>
+
+---
+
+### Step 4: Construct the IPv6 Address
+- Prefix: `::ffff:`
+- Hexadecimal IPv4: `C0:A8:00:01`
+- Combined: `::ffff:C0A8:01`
+
+---
+
+## Examples for Practice
+
+### Example 1
+Convert the IPv4 address `10.0.0.1` to IPv6.
+
+<details>
+<summary>Solution</summary>
+
+1. Binary conversion:
+   - 10 -> `00001010`, 0 -> `00000000`,  0 -> `00000000` ,  1 -> `00000001`
+   - Binary: `00001010.00000000.00000000.00000001`
+2. Hexadecimal conversion:
+   - `0000 1010 0000 0000 0000 0000 0000 0001`
+   - Hexadecimal: `A:0:0:1`
+3. IPv6 address: `::ffff:A:0:0:1`
+
+</details>
+
+---
+
+### Example 2
+Convert the IPv4 address `172.16.254.1` to IPv6.
+
+<details>
+<summary>Solution</summary>
+
+1. Binary conversion:
+   - 172 -> `10101100`, 16 -> `00010000`,    - 254 -> `11111110`, 1 -> `00000001`
+   - Binary: `10101100.00010000.11111110.00000001`
+2. Hexadecimal conversion:
+   - `1010 1100 0001 0000 1111 1110 0000 0001`
+   - Hexadecimal: `AC:10:FE:01`
+3. IPv6 address: `::ffff:AC10:FE01`
+
+</div>
+
+---
+
+## Cheat Sheet
+
+<div align=center>
+
+![w:1000 center](../../figures/ipv6_cheat_sheet.png)
+
+</div>
+
+---
+
 ## Summary
 
 - IPv4 is a 32-bit address space with classes for different network sizes.
 - Subnetting divides a network into smaller parts using subnet masks.
+- IPv6 due to exhaustion of IPv4 address spaces
 - CIDR provides flexible subnetting options.
