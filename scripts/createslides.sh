@@ -10,12 +10,12 @@ if [[ ! -d ${LECTURE_FOLDER} ]];then
 	mkdir ${LECTURE_FOLDER}
 fi
 
-source ${MODULE_DIR}/config
+source ${MODULE_DIR}/scripts/config
 
 cat >> ${LECTURE_FOLDER}/${LECTURE_FILENAME}.md << EOF
 ---
-title: DOCUMENT TITLE
-description: DESCRIPTION OF DOCUMENT
+title: ${LECTURE_FILENAME}
+description: ${LECTURE_FILENAME} Slides
 class: gaia
 _class:
   - lead
@@ -49,7 +49,7 @@ math: true
 
 <!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/ELEE1157_Lectures/raw/gh-pages/content/${LECTURE_FOLDER}/${LECTURE_FILENAME}.pdf)" -->
 
-# LECTURE TITLE
+# ${LECTURE_FILENAME}
 
     Module Code: $modulecode
 
