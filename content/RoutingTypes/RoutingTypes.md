@@ -110,10 +110,13 @@ math: true
 ​- Metrics are the network variables used to determine the best route to the destination. For some protocols use the static metrics means that their value cannot be changed and for some other routing protocols use the dynamic metrics means that their value can be assigned by the system administrator.​
 
   - There are give common metric values: **Hop Count**, **Delay**, **Bandwidth**, **Load** and **Reliability​**
-  
----​
+
+
+---
 
 ## Routing Metrics and Costs PT2​
+
+<div style="font-size:21px">
 
 **Hop count​**
 
@@ -127,9 +130,14 @@ math: true
 
 - The capacity of the link is known as a bandwidth of the link. The bandwidth is measured in terms of bits per second. The link that has a higher transfer rate like gigabit is preferred over the link that has the lower capacity like 56 kb. The protocol will determine the bandwidth capacity for all the links along the path, and the overall higher bandwidth will be considered as the best route.​
 
-​---
+</div>
+
+---
 
 ## Routing Metrics and Costs PT3​
+
+
+<div style="font-size:24px">
 
 **Load** ​
 
@@ -138,6 +146,8 @@ math: true
 **Reliability​**
 
 - Reliability is a metric factor may be composed of a fixed value. It depends on the network links, and its value is measured dynamically. Some networks go down more often than others. After network failure, some network links repaired more easily than other network links. Any reliability factor can be considered for the assignment of reliability ratings, which are generally numeric values assigned by the system administrator.​
+
+</div>
 
 ---
 
