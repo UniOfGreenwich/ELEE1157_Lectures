@@ -56,5 +56,8 @@ math: true
 
 ## Good luck and have a good time in the exam!
 
-![center](https://i.chzbgr.com/full/9029005056/h761B7854/photo-of-jake-gyllenhaal-situation-youre-in-when-taking-an-exam-and-see-the-first-question)
+<div align=center>
 
+![w:660 ](https://i.chzbgr.com/full/9029005056/h761B7854/photo-of-jake-gyllenhaal-situation-youre-in-when-taking-an-exam-and-see-the-first-question)
+
+</div>
