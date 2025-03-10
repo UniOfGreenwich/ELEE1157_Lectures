@@ -94,7 +94,7 @@ section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
 @import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
-;" data-marpit-pagination-total="13" data-size="16:9">
+;" data-marpit-pagination-total="11" data-size="16:9">
 <h2 id="contents">Contents</h2>
 <div class="grid grid-cols-2 gap-4">
 <div style="font-size:24px">
@@ -179,7 +179,7 @@ section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
 @import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
-;" data-marpit-pagination-total="13" data-size="16:9">
+;" data-marpit-pagination-total="11" data-size="16:9">
 <h2 id="routing%E2%80%8B">Routing​</h2>
 <div style="font-size:24px">
 <ul>
@@ -243,12 +243,36 @@ section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
 @import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
-;" data-marpit-pagination-total="13" data-size="16:9">
+;" data-marpit-pagination-total="11" data-size="16:9">
 <h2 id="routing-metrics-and-costs-pt1%E2%80%8B">Routing Metrics and Costs PT1​</h2>
 <p>​- Routing metrics and costs are used for determining the best route to the destination. The factors used by the protocols to determine the shortest path, these factors are known as a metric.​</p>
 <p>​- Metrics are the network variables used to determine the best route to the destination. For some protocols use the static metrics means that their value cannot be changed and for some other routing protocols use the dynamic metrics means that their value can be assigned by the system administrator.​</p>
 <ul>
 <li>There are give common metric values: <strong>Hop Count</strong>, <strong>Delay</strong>, <strong>Bandwidth</strong>, <strong>Load</strong> and <strong>Reliability​</strong></li>
+</ul>
+<p>---​</p>
+<h2 id="routing-metrics-and-costs-pt2%E2%80%8B">Routing Metrics and Costs PT2​</h2>
+<p><strong>Hop count​</strong></p>
+<ul>
+<li>Hop count is defined as a metric that specifies the number of passes through internetworking devices such as a router, a packet must travel in a route to move from source to the destination. If the routing protocol considers the hop as a primary metric value, then the path with the least hop count will be considered as the best path to move from source to the destination.​</li>
+</ul>
+<p><strong>Delay​</strong></p>
+<ul>
+<li>It is a time taken by the router to process, queue and transmit a datagram to an interface. The protocols use this metric to determine the delay values for all the links along the path end-to-end. The path having the lowest delay value will be considered as the best path.​</li>
+</ul>
+<p><strong>Bandwidth​</strong></p>
+<ul>
+<li>The capacity of the link is known as a bandwidth of the link. The bandwidth is measured in terms of bits per second. The link that has a higher transfer rate like gigabit is preferred over the link that has the lower capacity like 56 kb. The protocol will determine the bandwidth capacity for all the links along the path, and the overall higher bandwidth will be considered as the best route.​</li>
+</ul>
+<p>​---</p>
+<h2 id="routing-metrics-and-costs-pt3%E2%80%8B">Routing Metrics and Costs PT3​</h2>
+<p><strong>Load</strong> ​</p>
+<ul>
+<li>Load refers to the degree to which the network resource such as a router or network link is busy. A Load can be calculated in a variety of ways such as CPU utilization, packets processed per second. If the traffic increases, then the load value will also be increased. The load value changes with respect to the change in the traffic.​</li>
+</ul>
+<p><strong>Reliability​</strong></p>
+<ul>
+<li>Reliability is a metric factor may be composed of a fixed value. It depends on the network links, and its value is measured dynamically. Some networks go down more often than others. After network failure, some network links repaired more easily than other network links. Any reliability factor can be considered for the assignment of reliability ratings, which are generally numeric values assigned by the system administrator.​</li>
 </ul>
 <footer>ELEE1157 | Network Routing Management</footer>
 </section>
@@ -290,25 +314,12 @@ section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
 @import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
-;" data-marpit-pagination-total="13" data-size="16:9">
-<h2 id="routing-metrics-and-costs-pt2%E2%80%8B">Routing Metrics and Costs PT2​</h2>
-<div style="font-size:21px">
-<p><strong>Hop count​</strong></p>
-<ul>
-<li>Hop count is defined as a metric that specifies the number of passes through internetworking devices such as a router, a packet must travel in a route to move from source to the destination. If the routing protocol considers the hop as a primary metric value, then the path with the least hop count will be considered as the best path to move from source to the destination.​</li>
-</ul>
-<p><strong>Delay​</strong></p>
-<ul>
-<li>It is a time taken by the router to process, queue and transmit a datagram to an interface. The protocols use this metric to determine the delay values for all the links along the path end-to-end. The path having the lowest delay value will be considered as the best path.​</li>
-</ul>
-<p><strong>Bandwidth​</strong></p>
-<ul>
-<li>The capacity of the link is known as a bandwidth of the link. The bandwidth is measured in terms of bits per second. The link that has a higher transfer rate like gigabit is preferred over the link that has the lower capacity like 56 kb. The protocol will determine the bandwidth capacity for all the links along the path, and the overall higher bandwidth will be considered as the best route.​</li>
-</ul>
-</div>
+;" data-marpit-pagination-total="11" data-size="16:9">
+<h2 id="types-of-routing%E2%80%8B">Types of Routing​</h2>
+<p>​<img src="../../figures/TypesRouting1.png" alt="center" style="width:750px;" /></p>
 <footer>ELEE1157 | Network Routing Management</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-class="gaia" data-footer="ELEE1157 | Network Routing Management" data-paginate="true" data-style="#img-right{
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-class="gaia" data-footer="ELEE1157 | Network Routing Management" data-paginate="true" data-style="#img-right{
   float: right;
 }
 img[alt~=&quot;center&quot;] {
@@ -345,22 +356,7 @@ table, th,tr, td {
 section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
-@import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
-;" data-marpit-pagination-total="13" data-size="16:9">
-<h2 id="routing-metrics-and-costs-pt3%E2%80%8B">Routing Metrics and Costs PT3​</h2>
-<div style="font-size:24px">
-<p><strong>Load</strong> ​</p>
-<ul>
-<li>Load refers to the degree to which the network resource such as a router or network link is busy. A Load can be calculated in a variety of ways such as CPU utilization, packets processed per second. If the traffic increases, then the load value will also be increased. The load value changes with respect to the change in the traffic.​</li>
-</ul>
-<p><strong>Reliability​</strong></p>
-<ul>
-<li>Reliability is a metric factor may be composed of a fixed value. It depends on the network links, and its value is measured dynamically. Some networks go down more often than others. After network failure, some network links repaired more easily than other network links. Any reliability factor can be considered for the assignment of reliability ratings, which are generally numeric values assigned by the system administrator.​</li>
-</ul>
-</div>
-<footer>ELEE1157 | Network Routing Management</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-class="gaia" data-footer="ELEE1157 | Network Routing Management" data-paginate="true" data-style="#img-right{
+@import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');--marpit-advanced-background-split:35%;" data-marpit-pagination-total="11" data-size="16:9" data-marpit-advanced-background="background" data-marpit-advanced-background-split="right"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;../../figures/TypesRouting2.png&quot;);background-size:100%;"></figure></div></section></foreignObject><foreignObject width="65%" height="720"><section id="6" data-class="gaia" data-footer="ELEE1157 | Network Routing Management" data-paginate="true" data-style="#img-right{
   float: right;
 }
 img[alt~=&quot;center&quot;] {
@@ -379,7 +375,7 @@ section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
 @import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
-" lang="POSIX" class="gaia" data-marpit-pagination="7" style="--class:gaia;--footer:ELEE1157 | Network Routing Management;--paginate:true;--style:#img-right{
+" lang="POSIX" class="gaia" data-marpit-pagination="6" style="--class:gaia;--footer:ELEE1157 | Network Routing Management;--paginate:true;--style:#img-right{
   float: right;
 }
 img[alt~=&quot;center&quot;] {
@@ -397,87 +393,7 @@ table, th,tr, td {
 section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
-@import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
-;" data-marpit-pagination-total="13" data-size="16:9">
-<h2 id="types-of-routing%E2%80%8B">Types of Routing​</h2>
-<p>​<img src="../../figures/TypesRouting1.png" alt="center" style="width:750px;" /></p>
-<footer>ELEE1157 | Network Routing Management</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-class="gaia" data-footer="ELEE1157 | Network Routing Management" data-paginate="true" data-style="#img-right{
-  float: right;
-}
-img[alt~=&quot;center&quot;] {
-  display: block;
-  margin: 0 auto;
-}
-table {
-  border-collapse: collapse;
-  font-size: 22px;
-}
-table, th,tr, td {
-  border: none!important;
-  vertical-align: middle;
-}
-section::after {
-  content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
-}
-@import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
-" lang="POSIX" class="gaia" data-marpit-pagination="8" style="--class:gaia;--footer:ELEE1157 | Network Routing Management;--paginate:true;--style:#img-right{
-  float: right;
-}
-img[alt~=&quot;center&quot;] {
-  display: block;
-  margin: 0 auto;
-}
-table {
-  border-collapse: collapse;
-  font-size: 22px;
-}
-table, th,tr, td {
-  border: none!important;
-  vertical-align: middle;
-}
-section::after {
-  content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
-}
-@import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');--marpit-advanced-background-split:35%;" data-marpit-pagination-total="13" data-size="16:9" data-marpit-advanced-background="background" data-marpit-advanced-background-split="right"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;../../figures/TypesRouting2.png&quot;);background-size:100%;"></figure></div></section></foreignObject><foreignObject width="65%" height="720"><section id="8" data-class="gaia" data-footer="ELEE1157 | Network Routing Management" data-paginate="true" data-style="#img-right{
-  float: right;
-}
-img[alt~=&quot;center&quot;] {
-  display: block;
-  margin: 0 auto;
-}
-table {
-  border-collapse: collapse;
-  font-size: 22px;
-}
-table, th,tr, td {
-  border: none!important;
-  vertical-align: middle;
-}
-section::after {
-  content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
-}
-@import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
-" lang="POSIX" class="gaia" data-marpit-pagination="8" style="--class:gaia;--footer:ELEE1157 | Network Routing Management;--paginate:true;--style:#img-right{
-  float: right;
-}
-img[alt~=&quot;center&quot;] {
-  display: block;
-  margin: 0 auto;
-}
-table {
-  border-collapse: collapse;
-  font-size: 22px;
-}
-table, th,tr, td {
-  border: none!important;
-  vertical-align: middle;
-}
-section::after {
-  content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
-}
-@import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');--marpit-advanced-background-split:35%;" data-marpit-pagination-total="13" data-size="16:9" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right">
+@import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');--marpit-advanced-background-split:35%;" data-marpit-pagination-total="11" data-size="16:9" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right">
 <h2 id="types-of-routing-%E2%80%93-static-routing-pt1">Types of Routing – Static routing pt1</h2>
 <ul>
 <li>
@@ -516,7 +432,7 @@ section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
 @import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
-" lang="POSIX" class="gaia" data-marpit-pagination="8" style="" data-marpit-pagination-total="13" data-size="16:9" data-marpit-advanced-background="pseudo" data-marpit-advanced-background-split="right"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-class="gaia" data-footer="ELEE1157 | Network Routing Management" data-paginate="true" data-style="#img-right{
+" lang="POSIX" class="gaia" data-marpit-pagination="6" style="" data-marpit-pagination-total="11" data-size="16:9" data-marpit-advanced-background="pseudo" data-marpit-advanced-background-split="right"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-class="gaia" data-footer="ELEE1157 | Network Routing Management" data-paginate="true" data-style="#img-right{
   float: right;
 }
 img[alt~=&quot;center&quot;] {
@@ -535,7 +451,7 @@ section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
 @import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
-" lang="POSIX" class="gaia" data-marpit-pagination="9" style="--class:gaia;--footer:ELEE1157 | Network Routing Management;--paginate:true;--style:#img-right{
+" lang="POSIX" class="gaia" data-marpit-pagination="7" style="--class:gaia;--footer:ELEE1157 | Network Routing Management;--paginate:true;--style:#img-right{
   float: right;
 }
 img[alt~=&quot;center&quot;] {
@@ -553,7 +469,7 @@ table, th,tr, td {
 section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
-@import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');--marpit-advanced-background-split:35%;" data-marpit-pagination-total="13" data-size="16:9" data-marpit-advanced-background="background" data-marpit-advanced-background-split="right"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;../../figures/TypesRouting2.png&quot;);background-size:100%;"></figure></div></section></foreignObject><foreignObject width="65%" height="720"><section id="9" data-class="gaia" data-footer="ELEE1157 | Network Routing Management" data-paginate="true" data-style="#img-right{
+@import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');--marpit-advanced-background-split:35%;" data-marpit-pagination-total="11" data-size="16:9" data-marpit-advanced-background="background" data-marpit-advanced-background-split="right"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;../../figures/TypesRouting2.png&quot;);background-size:100%;"></figure></div></section></foreignObject><foreignObject width="65%" height="720"><section id="7" data-class="gaia" data-footer="ELEE1157 | Network Routing Management" data-paginate="true" data-style="#img-right{
   float: right;
 }
 img[alt~=&quot;center&quot;] {
@@ -572,7 +488,7 @@ section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
 @import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
-" lang="POSIX" class="gaia" data-marpit-pagination="9" style="--class:gaia;--footer:ELEE1157 | Network Routing Management;--paginate:true;--style:#img-right{
+" lang="POSIX" class="gaia" data-marpit-pagination="7" style="--class:gaia;--footer:ELEE1157 | Network Routing Management;--paginate:true;--style:#img-right{
   float: right;
 }
 img[alt~=&quot;center&quot;] {
@@ -590,7 +506,7 @@ table, th,tr, td {
 section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
-@import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');--marpit-advanced-background-split:35%;" data-marpit-pagination-total="13" data-size="16:9" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right">
+@import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');--marpit-advanced-background-split:35%;" data-marpit-pagination-total="11" data-size="16:9" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right">
 <h2 id="types-of-routing-%E2%80%93-static-routing-pt2">Types of Routing – Static Routing PT2</h2>
 <div style="font-size:21px">
 <p><strong>Advantages</strong></p>
@@ -638,7 +554,7 @@ section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
 @import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
-" lang="POSIX" class="gaia" data-marpit-pagination="9" style="" data-marpit-pagination-total="13" data-size="16:9" data-marpit-advanced-background="pseudo" data-marpit-advanced-background-split="right"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-class="gaia" data-footer="ELEE1157 | Network Routing Management" data-paginate="true" data-style="#img-right{
+" lang="POSIX" class="gaia" data-marpit-pagination="7" style="" data-marpit-pagination-total="11" data-size="16:9" data-marpit-advanced-background="pseudo" data-marpit-advanced-background-split="right"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-class="gaia" data-footer="ELEE1157 | Network Routing Management" data-paginate="true" data-style="#img-right{
   float: right;
 }
 img[alt~=&quot;center&quot;] {
@@ -657,7 +573,7 @@ section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
 @import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
-" lang="POSIX" class="gaia" data-marpit-pagination="10" style="--class:gaia;--footer:ELEE1157 | Network Routing Management;--paginate:true;--style:#img-right{
+" lang="POSIX" class="gaia" data-marpit-pagination="8" style="--class:gaia;--footer:ELEE1157 | Network Routing Management;--paginate:true;--style:#img-right{
   float: right;
 }
 img[alt~=&quot;center&quot;] {
@@ -675,7 +591,7 @@ table, th,tr, td {
 section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
-@import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');--marpit-advanced-background-split:35%;" data-marpit-pagination-total="13" data-size="16:9" data-marpit-advanced-background="background" data-marpit-advanced-background-split="right"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;../../figures/TypesRouting3.png&quot;);background-size:100%;"></figure></div></section></foreignObject><foreignObject width="65%" height="720"><section id="10" data-class="gaia" data-footer="ELEE1157 | Network Routing Management" data-paginate="true" data-style="#img-right{
+@import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');--marpit-advanced-background-split:35%;" data-marpit-pagination-total="11" data-size="16:9" data-marpit-advanced-background="background" data-marpit-advanced-background-split="right"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;../../figures/TypesRouting3.png&quot;);background-size:100%;"></figure></div></section></foreignObject><foreignObject width="65%" height="720"><section id="8" data-class="gaia" data-footer="ELEE1157 | Network Routing Management" data-paginate="true" data-style="#img-right{
   float: right;
 }
 img[alt~=&quot;center&quot;] {
@@ -694,7 +610,7 @@ section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
 @import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
-" lang="POSIX" class="gaia" data-marpit-pagination="10" style="--class:gaia;--footer:ELEE1157 | Network Routing Management;--paginate:true;--style:#img-right{
+" lang="POSIX" class="gaia" data-marpit-pagination="8" style="--class:gaia;--footer:ELEE1157 | Network Routing Management;--paginate:true;--style:#img-right{
   float: right;
 }
 img[alt~=&quot;center&quot;] {
@@ -712,7 +628,7 @@ table, th,tr, td {
 section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
-@import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');--marpit-advanced-background-split:35%;" data-marpit-pagination-total="13" data-size="16:9" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right">
+@import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');--marpit-advanced-background-split:35%;" data-marpit-pagination-total="11" data-size="16:9" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right">
 <h2 id="types-of-routing-%E2%80%93-default-routing">Types of Routing – Default routing</h2>
 <div style="font-size:21px">
 <ul>
@@ -756,7 +672,7 @@ section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
 @import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
-" lang="POSIX" class="gaia" data-marpit-pagination="10" style="" data-marpit-pagination-total="13" data-size="16:9" data-marpit-advanced-background="pseudo" data-marpit-advanced-background-split="right"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-class="gaia" data-footer="ELEE1157 | Network Routing Management" data-paginate="true" data-style="#img-right{
+" lang="POSIX" class="gaia" data-marpit-pagination="8" style="" data-marpit-pagination-total="11" data-size="16:9" data-marpit-advanced-background="pseudo" data-marpit-advanced-background-split="right"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-class="gaia" data-footer="ELEE1157 | Network Routing Management" data-paginate="true" data-style="#img-right{
   float: right;
 }
 img[alt~=&quot;center&quot;] {
@@ -775,7 +691,7 @@ section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
 @import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
-" lang="POSIX" class="gaia" data-marpit-pagination="11" style="--class:gaia;--footer:ELEE1157 | Network Routing Management;--paginate:true;--style:#img-right{
+" lang="POSIX" class="gaia" data-marpit-pagination="9" style="--class:gaia;--footer:ELEE1157 | Network Routing Management;--paginate:true;--style:#img-right{
   float: right;
 }
 img[alt~=&quot;center&quot;] {
@@ -793,7 +709,7 @@ table, th,tr, td {
 section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
-@import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');--marpit-advanced-background-split:35%;" data-marpit-pagination-total="13" data-size="16:9" data-marpit-advanced-background="background" data-marpit-advanced-background-split="right"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;../../figures/TypesRouting4.png&quot;);background-size:100%;"></figure></div></section></foreignObject><foreignObject width="65%" height="720"><section id="11" data-class="gaia" data-footer="ELEE1157 | Network Routing Management" data-paginate="true" data-style="#img-right{
+@import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');--marpit-advanced-background-split:35%;" data-marpit-pagination-total="11" data-size="16:9" data-marpit-advanced-background="background" data-marpit-advanced-background-split="right"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;../../figures/TypesRouting4.png&quot;);background-size:100%;"></figure></div></section></foreignObject><foreignObject width="65%" height="720"><section id="9" data-class="gaia" data-footer="ELEE1157 | Network Routing Management" data-paginate="true" data-style="#img-right{
   float: right;
 }
 img[alt~=&quot;center&quot;] {
@@ -812,7 +728,7 @@ section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
 @import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
-" lang="POSIX" class="gaia" data-marpit-pagination="11" style="--class:gaia;--footer:ELEE1157 | Network Routing Management;--paginate:true;--style:#img-right{
+" lang="POSIX" class="gaia" data-marpit-pagination="9" style="--class:gaia;--footer:ELEE1157 | Network Routing Management;--paginate:true;--style:#img-right{
   float: right;
 }
 img[alt~=&quot;center&quot;] {
@@ -830,7 +746,7 @@ table, th,tr, td {
 section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
-@import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');--marpit-advanced-background-split:35%;" data-marpit-pagination-total="13" data-size="16:9" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right">
+@import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');--marpit-advanced-background-split:35%;" data-marpit-pagination-total="11" data-size="16:9" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right">
 <h2 id="types-of-routing-%E2%80%93-dynamic-routing-pt1">Types of Routing – Dynamic Routing PT1</h2>
 <div style="font-size:21px">
 <ul>
@@ -874,7 +790,7 @@ section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
 @import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
-" lang="POSIX" class="gaia" data-marpit-pagination="11" style="" data-marpit-pagination-total="13" data-size="16:9" data-marpit-advanced-background="pseudo" data-marpit-advanced-background-split="right"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-class="gaia" data-footer="ELEE1157 | Network Routing Management" data-paginate="true" data-style="#img-right{
+" lang="POSIX" class="gaia" data-marpit-pagination="9" style="" data-marpit-pagination-total="11" data-size="16:9" data-marpit-advanced-background="pseudo" data-marpit-advanced-background-split="right"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-class="gaia" data-footer="ELEE1157 | Network Routing Management" data-paginate="true" data-style="#img-right{
   float: right;
 }
 img[alt~=&quot;center&quot;] {
@@ -893,7 +809,7 @@ section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
 @import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
-" lang="POSIX" class="gaia" data-marpit-pagination="12" style="--class:gaia;--footer:ELEE1157 | Network Routing Management;--paginate:true;--style:#img-right{
+" lang="POSIX" class="gaia" data-marpit-pagination="10" style="--class:gaia;--footer:ELEE1157 | Network Routing Management;--paginate:true;--style:#img-right{
   float: right;
 }
 img[alt~=&quot;center&quot;] {
@@ -911,7 +827,7 @@ table, th,tr, td {
 section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
-@import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');--marpit-advanced-background-split:30%;" data-marpit-pagination-total="13" data-size="16:9" data-marpit-advanced-background="background" data-marpit-advanced-background-split="right"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;../../figures/TypesRouting4.png&quot;);background-size:100%;"></figure></div></section></foreignObject><foreignObject width="70%" height="720"><section id="12" data-class="gaia" data-footer="ELEE1157 | Network Routing Management" data-paginate="true" data-style="#img-right{
+@import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');--marpit-advanced-background-split:30%;" data-marpit-pagination-total="11" data-size="16:9" data-marpit-advanced-background="background" data-marpit-advanced-background-split="right"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;../../figures/TypesRouting4.png&quot;);background-size:100%;"></figure></div></section></foreignObject><foreignObject width="70%" height="720"><section id="10" data-class="gaia" data-footer="ELEE1157 | Network Routing Management" data-paginate="true" data-style="#img-right{
   float: right;
 }
 img[alt~=&quot;center&quot;] {
@@ -930,7 +846,7 @@ section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
 @import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
-" lang="POSIX" class="gaia" data-marpit-pagination="12" style="--class:gaia;--footer:ELEE1157 | Network Routing Management;--paginate:true;--style:#img-right{
+" lang="POSIX" class="gaia" data-marpit-pagination="10" style="--class:gaia;--footer:ELEE1157 | Network Routing Management;--paginate:true;--style:#img-right{
   float: right;
 }
 img[alt~=&quot;center&quot;] {
@@ -948,7 +864,7 @@ table, th,tr, td {
 section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
-@import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');--marpit-advanced-background-split:30%;" data-marpit-pagination-total="13" data-size="16:9" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right">
+@import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');--marpit-advanced-background-split:30%;" data-marpit-pagination-total="11" data-size="16:9" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right">
 <h2 id="types-of-routing-%E2%80%93-dynamic-routing-pt2">Types of Routing – Dynamic Routing PT2</h2>
 <div style="font-size:20px;padding-bottom:20px">
 <p><strong>Mandatory features</strong></p>
@@ -1002,7 +918,7 @@ section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
 @import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
-" lang="POSIX" class="gaia" data-marpit-pagination="12" style="" data-marpit-pagination-total="13" data-size="16:9" data-marpit-advanced-background="pseudo" data-marpit-advanced-background-split="right"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-class="gaia" data-footer="ELEE1157 | Network Routing Management" data-paginate="true" data-style="#img-right{
+" lang="POSIX" class="gaia" data-marpit-pagination="10" style="" data-marpit-pagination-total="11" data-size="16:9" data-marpit-advanced-background="pseudo" data-marpit-advanced-background-split="right"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-class="gaia" data-footer="ELEE1157 | Network Routing Management" data-paginate="true" data-style="#img-right{
   float: right;
 }
 img[alt~=&quot;center&quot;] {
@@ -1021,7 +937,7 @@ section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
 @import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
-" lang="POSIX" class="gaia" data-marpit-pagination="13" style="--class:gaia;--footer:ELEE1157 | Network Routing Management;--paginate:true;--style:#img-right{
+" lang="POSIX" class="gaia" data-marpit-pagination="11" style="--class:gaia;--footer:ELEE1157 | Network Routing Management;--paginate:true;--style:#img-right{
   float: right;
 }
 img[alt~=&quot;center&quot;] {
@@ -1040,7 +956,7 @@ section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
 @import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
-;" data-marpit-pagination-total="13" data-size="16:9">
+;" data-marpit-pagination-total="11" data-size="16:9">
 <h2 id="example-of-static-routing">Example of Static Routing</h2>
 <div style="font-size:21px">
 <p><code>Router(config)# ip route destination_network_# [subnet_mask] IP_address_of_next_hop_ [admin_dist] [permanent]</code></p>
