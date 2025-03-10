@@ -57,7 +57,7 @@ math: true
 
 ---
 
-## 1. Network Configuration and Interface Management
+## Network Configuration and Interface Management
 
 - `ip`: Configure IP addresses, routes, and manage network interfaces.
 - `ifconfig`: View and configure network interfaces (deprecated on some systems, replaced by ip).
@@ -68,7 +68,7 @@ math: true
 
 ---
 
-## 2. Connection Testing and Diagnostics
+## Connection Testing and Diagnostics
 
 - `ping`: Test reachability of hosts and measure round-trip time.
 - `traceroute` / `tracert` (Windows): Trace the path packets take to a destination.
@@ -79,7 +79,7 @@ math: true
 
 ---
 
-## 3. Network Analysis and Troubleshooting
+## Network Analysis and Troubleshooting
 
 - `arp`: Display or manipulate the ARP cache (used to map IPs to MAC addresses).
 - `tcpdump`: Capture and analyze packets on a network interface.
@@ -91,7 +91,7 @@ math: true
 
 ---
 
-## 4. Performance Monitoring and Statistics
+## Performance Monitoring and Statistics
 
 - `netstat`: View network connections, routing tables, interface stats, and more.
 - `iftop`: Monitor bandwidth usage on a specific interface.
@@ -102,7 +102,7 @@ math: true
 
 ---
 
-## 5. Network File Transfer and Communication
+## Network File Transfer and Communication
 
 - `scp`: Securely copy files between hosts over SSH.
 - `sftp`: Secure File Transfer Protocol, similar to ftp but encrypted with SSH.
@@ -112,14 +112,14 @@ math: true
 
 ---
 
-## 6. Firewall and Security Management
+## Firewall and Security Management
 - `ufw`: Simple command-line interface for managing firewall on Linux.
 - `iptables` / nftables: Configure firewall rules and manage packet filtering.
 - `firewalld`: A service to manage firewall on Linux, often used with firewall-cmd.
 
 ---
 
-## 7. VPN and Tunnel Management
+## VPN and Tunnel Management
 
 - `openvpn`: Connect to OpenVPN-compatible VPNs.
 - `ssh`: Secure Shell for encrypted connections and tunneling.
@@ -130,7 +130,7 @@ math: true
 ---
 
 
-## 8. nmcli
+## nmcli
 
 `nmcli` is the command-line tool for managing network connections with NetworkManager. It can handle both wired and wireless connections.
 
@@ -150,7 +150,7 @@ nmcli device status
 
 ---
 
-## 9. iwd (Internet Wireless Daemon)
+## iwd (Internet Wireless Daemon)
 
 `iwd` is a lightweight Wi-Fi management daemon developed by Intel, offering WPA2 and WPA3 support.
 
@@ -171,7 +171,7 @@ iwctl
 
 ---
 
-## 10. wpa_supplicant
+## wpa_supplicant
 
 `wpa_supplicant` is a Wi-Fi management daemon often used to connect to WPA and WPA2 protected networks.
 
@@ -190,3 +190,40 @@ wpa_cli -i wlan0
 > set_network 0 psk ""password""
 > enable_network 0
 ```
+
+---
+
+## nmap
+
+Nmap (“Network Mapper”) is an open source tool for network exploration and security auditing.
+
+Ping Scan
+```
+nmap -sp 192.168.1.1/24
+```
+
+OS detection
+```
+nmap -O 192.51.155.0/24
+```
+
+experiment with others...
+
+---
+
+## wifi modes
+
+<div style="font-size:24px">
+
+- `mode`
+  - `infrastructure`: This is the most common mode, used for connecting to standard Wi-Fi networks with an access point.
+
+  - `ap`: Used to set up the device as an access point.
+
+  - `adhoc`: Used for ad-hoc networks where devices connect directly to each other without an access point. (No router needed!)
+  
+  - `monitor`: This mode is used for passive monitoring of Wi-Fi traffic. It allows the device to capture packets without actively participating in the network.
+
+  - `mesh`: Used for mesh networking, where devices communicate with each other to form a network without a central access point.
+
+  - `p2p`: Peer-to-peer mode, used for direct communication between devices, similar to ad-hoc but with different underlying mechanisms.
