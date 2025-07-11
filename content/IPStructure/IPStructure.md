@@ -1,77 +1,101 @@
 ---
-title: IPStructure
-description: IPStructure slides
-class: gaia
-_class:
-  - lead
-  - invert
-style: |
-    #img-right{
-      float: right;
-    }
-    img[alt~="center"] {
-      display: block;
-      margin: 0 auto;
-    }
-    table {
-      border-collapse: collapse;
-      font-size: 28px;
-    }
-    table, th,tr, td {
-      border: none!important;
-      vertical-align: middle;
-    }
-    grid {
-      display: grid;
-    }
-    grid-cols {
-      grid-template-columns: repeat(var(--columns, 2), minmax(0, 1fr));
-    }
-    grid-rows {
-      grid-template-rows: repeat(var(--rows, 2), minmax(0, 1fr));
-    }
-    gap {
-      gap: var(--gap, 4px);
-    }    content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
-    }
-footer: ELEE1157 | Network Routing Management
-auto-scaling: false
-paginate: true
-_paginate: false
 marp: true
-math: true
 ---
 
-<!-- _footer: ""-->
+<!--
+# Metadata
+title: IPStructure
+author: Seb Blair (CompEng0001)
+description: IPStructure
+keywords: IPStructure
+lang: en
+
+# Slide styling
+theme: uog-theme
+_class: lead title
+paginate: true
+_paginate: false
+transition: fade 250ms
+
+style: |
+  header em { font-style: normal; view-transition-name: header; }
+  header strong { font-weight: inherit; view-transition-name: header2; }
+  header:not:has(em) { view-transition-name: header; }
+-->
+
+<style scoped>
+h1 {
+  view-transition-name: header;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+</style>
 
 # IPStructure
 
-    Module Code: ELEE1157
+<div align=center style="font-size:76px; padding-left:300px;padding-right:300px;" >
 
-    Module Name: Network Routing Management
+```
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Thu, 10 Jul 2025 08:26:00 GMT
+Server: EduAPI/3.0
 
-    Credits: 15
+{
+  "code": "ELEE1157",
+  "name": "Network Routing Management",
+  "credits": 15,
+  "module_leader": "Seb Blair BEng(H) PGCAP MIET MIHEEM FHEA"
+}
 
-    Module Leader: Seb Blair BEng(H) MPhil PGCAP MIET MIHEEM FHEA
+```
+
+</div>
+
+<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/ELEE1157_Lectures/raw/main/content/IPStructure/IPStructure.pdf)" -->
 
 ---
 
 ## What is IPv4?
 
+<div style="padding-top:150px">
+
 - **IPv4**: Internet Protocol version 4 is a core protocol that defines IP addresses used in networking.
+
+<br>
+
 - **32-bit** address space, supporting up to **4.3 billion addresses**.
+
+</div>
 
 ---
 
 ## IPv4 Address Structure
 
-- IPv4 addresses are written as four **octets** separated by periods.
-- Example: `192.168.1.1`
+<div style="padding-top:150px">
+
+- IPv4 addresses are written as four **octets** separated by periods: `192.168.1.1`
+
+<br>
+
+<div class="columns-2">
+<div>
+
 - Each octet is an **8-bit binary number** (total 32 bits).
 
-  ```plaintext
-  IPv4 Address Example: 11000000.10101000.00000001.00000001
-  ```
+</div>
+<div>
+
+```plaintext
+IPv4 Address Example: 11000000.10101000.00000001.00000001
+```
+
+</div>  
+</div>
+
+<br>
+
 - Each octet ranges from `0-255` in decimal.
 
 ---
@@ -80,7 +104,7 @@ math: true
 
 IPv4 addresses are divided into five classes:
 
-<div align=center>
+<div style="padding-top:100px" align=center>
 
 | Class | Range                       | Usage           |Networks|Hosts|
 |-------|-----------------------------|-----------------|--------|-----|
@@ -98,7 +122,7 @@ IPv4 addresses are divided into five classes:
 
 IPv4 has reserved addresses for private networks and special purposes.
 
-<div align=center>
+<div style="padding-top:100px" align=center>
 
 | Range               | Description            |
 |---------------------|------------------------|
@@ -117,14 +141,24 @@ IPv4 has reserved addresses for private networks and special purposes.
 - Dividing a large network into smaller, manageable subnetworks.
 - Uses a **subnet mask** to identify network and host portions.
 
+<div class="columns-2" style="padding-top:100px">
+<div>
+
 ### Example:
+
 - IP: `192.168.1.0/24`
 - Subnet Mask: `255.255.255.0`
 
-  ```plaintext
-  Network Portion | Host Portion
-  192.168.1       | .0 - .255
-  ```
+</div>
+<div style="padding-top:100px">
+
+```plaintext
+Network Portion | Host Portion
+192.168.1       | .0 - .255
+```
+
+</div>
+</div>
 
 ---
 
@@ -165,7 +199,7 @@ IPv4 has reserved addresses for private networks and special purposes.
 
  - Starting with 192.168.1.0, each subnet has 64 addresses, incrementing by 64 for each subsequent subnet.
 
-<div align=center>
+<div style="padding-top:50px" align=center>
 
 |Subnet ID|	Range|	Description|
 |---|---|---|
@@ -179,8 +213,9 @@ IPv4 has reserved addresses for private networks and special purposes.
 ---
 
 
-
 ## Why IPv6?
+
+<br>
 
 **IPv4 Address Exhaustion**
 
@@ -191,6 +226,8 @@ IPv4 has reserved addresses for private networks and special purposes.
 - IPv6: 128-bit address space
 
 - ~340 undecillion addresses (enough for future needs).
+
+<br>
 
 **Enhanced features:**
 
@@ -204,19 +241,23 @@ IPv4 has reserved addresses for private networks and special purposes.
 
 ## IPv6 Address Format
 
-<div align=center>
+<div>
 
-![center](../../figures/ipv6-address-format.png)
+![](../../figures/ipv6-address-format.png "centered")
 
 </div>
 
-<div style="font-size:22px">
+<br>
+
+<div style="font-size:29px">
 
 - Length: 128 bits (8 groups of 16 bits each).
 
 - Hexadecimal notation.
 
 - Groups separated by colons (e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334).
+
+<br>
 
 **Simplification Rules:**
 
@@ -230,19 +271,21 @@ IPv4 has reserved addresses for private networks and special purposes.
 
 ## Anatomy of IPv6 address format: Example
 
-<div align=center>
+<div style="padding-top:170px">
 
-![w:1000](../../figures/IPv6-Anatomy-Address-Format.png)
+![invert w:1000](../../figures/IPv6-Anatomy-Address-Format.png "centered")
 
 </div>
 
 ---
 
+## Internet Assigned Numbers Authority (IANA)
+
 <div align=center>
 
-![bg 100% horizontal](../../figures/iana_map.png)
+![bg 90% horizontal](../../figures/iana_map.png)
 
-![bg 100% horizontal](../../figures/ipv6-prefix-assignment.png)
+![bg 80% horizontal](../../figures/ipv6-prefix-assignment.png)
 
 </div>
 
@@ -250,13 +293,12 @@ IPv4 has reserved addresses for private networks and special purposes.
 
 Internet Assigned Numbers Authority
 
-
 -->
 ---
 
 ## IPv4 to IPv6 Transition
 
-<div style="font-size:22px">
+<div style="font-size:29px;padding-top:100px">
 
 - **Dual Stack**
 
@@ -264,15 +306,16 @@ Internet Assigned Numbers Authority
 
   - Allows gradual transition.
 
-<div align=center>
+<div style="padding-top:100px">
 
-![center](../../figures/ipv6_DualStack.png)
+![w:900](../../figures/ipv6_DualStack.png "centered")
 
 </div>
 
 ---
+## IPv4 to IPv6 Transition
 
-<div style="font-size="24px">
+<div style="font-size:29px;padding-top:100px">
 
 - **Tunneling**
 
@@ -284,15 +327,17 @@ Internet Assigned Numbers Authority
 
     - Teredo: Tunnels IPv6 over IPv4 using NAT.
 
-<div align=center>
+<div style="padding-top:100px">
 
-![](../../figures/ipv6_tunnelling.png)
+![w:900](../../figures/ipv6_tunnelling.png "centered")
 
 </div>
 
 ---
 
-<div style="font-size="24px">
+## IPv4 to IPv6 Transition
+
+<div style="font-size:29px;padding-top:50px">
 
 - **Translation**
 
@@ -304,10 +349,9 @@ Internet Assigned Numbers Authority
 
 </div>
 
-<div align=center>
+<div>
 
-![bg right:50% 100% ](../../figures/ipv6_nat64.png)
-
+![](../../figures/ipv6_nat64.png "centered")
 
 </div>
 
@@ -316,41 +360,70 @@ Internet Assigned Numbers Authority
 ##  IPv4 to IPv6
 
 ### Step 1: Understand the IPv4 Address
+
 - Example IPv4: `192.168.0.1`
+<br>
 - Convert to binary:
+<br>
   - 192 -> `11000000`
+<br>
   - 168 -> `10101000`
+<br> 
   - 0 -> `00000000`
+<br>
   - 1 -> `00000001`
+<br>
 - Binary IPv4: `11000000.10101000.00000000.00000001`
 
 
 ---
 
-
 ### Step 2: Map IPv4 to IPv6 Format
+
 - IPv6 has special prefixes for IPv4-mapped addresses:
+  
+  <br>
+
   - `::ffff:0:0/96`
+  
+  <br>
+
 - Append the 32-bit binary IPv4 to the `::ffff:` prefix.
 
 ---
 
 ### Step 3: Convert Binary IPv4 to Hexadecimal
 
-<div style="font-size:23px">
+<div style="font-size:29px">
 
 - IPv4 in binary: `11000000.10101000.00000000.00000001`
+<br>
 - Group into 4-bit chunks:
   - `1100 0000 1010 1000 0000 0000 0000 0001`
+
+<br>
+
 - Convert each chunk to hexadecimal:
+  <div class="columns-2">
+  <div style="padding-left:300px">
+
   - `1100` -> `C`
   - `0000` -> `0`
   - `1010` -> `A`
   - `1000` -> `8`
+  
+  </div>
+  <div style="padding-right:300px">
+
   - `0000` -> `0`
   - `0000` -> `0`
   - `0000` -> `0`
   - `0001` -> `1`
+  
+  </div>
+  </div>
+<br>
+
 - Hexadecimal IPv4: `C0:A8:00:01`
 
 </div>
@@ -358,8 +431,17 @@ Internet Assigned Numbers Authority
 ---
 
 ### Step 4: Construct the IPv6 Address
+
+<br>
+
 - Prefix: `::ffff:`
+
+<br>
+
 - Hexadecimal IPv4: `C0:A8:00:01`
+
+<br>
+
 - Combined: `::ffff:C0A8:01`
 
 ---
@@ -404,17 +486,8 @@ Convert the IPv4 address `172.16.254.1` to IPv6.
 
 ## Cheat Sheet
 
-<div align=center>
+<div style="padding-top:50px">
 
-![w:1000 center](../../figures/ipv6_cheat_sheet.png)
+![w:1300](../../figures/ipv6_cheat_sheet.png "centered")
 
 </div>
-
----
-
-## Summary
-
-- IPv4 is a 32-bit address space with classes for different network sizes.
-- Subnetting divides a network into smaller parts using subnet masks.
-- IPv6 due to exhaustion of IPv4 address spaces
-- CIDR provides flexible subnetting options.
